@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Local Storage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- container start -->
+    <div class="container">
+      <!-- header title start -->
+      <div class="header">
+        <h1 class="header-title">Local Storage Crud</h1>
+      </div>
+      <!-- header title end -->
+
+      <!-- button add data start -->
+      <button onclick="ActiveForm()" id="button-add-data" class="btn-primary">Add Some Book</button>
+      <!-- button add data end -->
+
+      <!-- form start -->
+      <div class="form-control" id="form-control">
+        <form method="post">
+          <label for="name">Book Name</label>
+          <input type="text" id="name" name="name" />
+          <label for="count">Total Count</label>
+          <input type="number" id="count" name="count" />
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" />
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30"></textarea>
+
+          <button class="btn-primary short" type="button" id="submit" onclick="AddData()">Add</button>
+          <button class="btn-primary short" type="button" id="update" onclick="UpdateData()">Update</button>
+          <button class="btn-primary short" type="button" id="cancle" onclick="CancleAdd()">Cancle</button>
+        </form>
+        <br />
+        <hr />
+      </div>
+      <!-- form end -->
+
+      <!-- table start -->
+      <div class="table" id="crudTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Total Count</th>
+              <th>Author</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- table end -->
+    </div>
+    <!-- container end -->
+
+    <!-- link to javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
