@@ -1,0 +1,31 @@
+.card-container {
+  box-sizing: border-box;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+  flex-direction: row;
+  width: fit-content;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-list {
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.card-list img {
+  width: 9rem;
+  border-radius: 4px;
+  height: 9rem;
+}

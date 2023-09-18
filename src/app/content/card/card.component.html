@@ -1,0 +1,26 @@
+<div class="card-container">
+  <mat-card class="card-list" *ngFor="let person of peopleList">
+    <!-- Konten dari mat-card -->
+    <mat-card-content>
+      <div class="img">
+        <img [src]="person.url" alt="" />
+      </div>
+      <p>Nama: {{ person.title }}</p>
+      <p>ID: {{ person.id }}</p>
+      <p>Case: {{ person.case }}</p>
+      <p>Address: {{ person.address }}</p>
+    </mat-card-content>
+
+    <!-- Tombol Delete -->
+    <mat-card-actions>
+      <button
+        mat-button
+        class="mat-raised-button"
+        color="warn"
+        (click)="deleteData(person.id)"
+      >
+        Delete
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

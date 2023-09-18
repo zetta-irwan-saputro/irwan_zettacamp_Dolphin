@@ -1,0 +1,66 @@
+<div class="parent-container">
+  <mat-card class="container">
+    <mat-card-content>
+      <mat-form-field class="flex">
+        <mat-label>Your Picture Url</mat-label>
+        <input matInput [(ngModel)]="url" name="url" id="url" type="text" />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>nama</mat-label>
+        <input matInput [(ngModel)]="nama" name="nama" id="nama" type="text" />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>id</mat-label>
+        <input
+          matInput
+          [(ngModel)]="id"
+          name="id"
+          id="id"
+          type="number"
+          class="full-width-input"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Address</mat-label>
+        <input
+          matInput
+          [(ngModel)]="address"
+          name="address"
+          id="address"
+          type="text"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Case</mat-label>
+        <input matInput [(ngModel)]="case" name="case" id="case" type="text" />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="addData()"
+        class="form-button"
+      >
+        Add Data
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="dumy-card">
+    <mat-card-content class="dumy-content">
+      <img
+        src="https://jurnalkalimantan.com/wp-content/uploads/2022/07/IMG-20220723-WA0006-01.jpeg"
+        alt=""
+        class="dumy-img"
+      />
+      <p>{{ nama }}</p>
+      <p>{{ id }}</p>
+      <p>{{ address }}</p>
+      <p>{{ case }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
