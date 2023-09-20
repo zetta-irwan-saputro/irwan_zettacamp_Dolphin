@@ -1,0 +1,7 @@
+.cont {
+  /* Gradient biru dari atas (top) ke bawah (bottom) */
+  /* Gradient tema biru tua dengan 4 warna */
+  background: linear-gradient(to bottom, #292744 50%, #d9d7e0);
+
+  padding-bottom: 3rem;
+}

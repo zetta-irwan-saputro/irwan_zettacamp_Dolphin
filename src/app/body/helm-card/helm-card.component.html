@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="helm.url" alt="" />
+  <h4>{{ helm.helmName }}</h4>
+  <div class="button">
+    <button class="one" (click)="onDelete()">delete</button>
+    <button
+      [routerLink]="['/detail', helm.id]"
+      class="two"
+      (click)="onDetail()"
+    >
+      detail
+    </button>
+  </div>
+</div>

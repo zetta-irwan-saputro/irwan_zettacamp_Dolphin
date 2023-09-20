@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngIf="selectData" class="card">
+    <img [src]="selectData.url" alt="" />
+    <h3>Name: {{ selectData.helmName }}</h3>
+    <p>Color :{{ selectData.color }}</p>
+    <p>Size: {{ selectData.size }}</p>
+    <p>Model Helm: {{ selectData.model }}</p>
+    <p>Year :{{ selectData.year }}</p>
+    <p>Weight: {{ selectData.weight }} Kg</p>
+    <button [routerLink]="['/']" (click)="resetDetail()">close</button>
+  </div>
+</div>
+
+<!-- <p *ngIf="selectData">
+  {{ selectData.helmName }}
+  <button (click)="resetDetail()">close</button>
+</p> -->

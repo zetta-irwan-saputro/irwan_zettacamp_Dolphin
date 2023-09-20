@@ -1,0 +1,39 @@
+.parent-container {
+  display: flex;
+  /* border: 1px solid yellow; */
+  justify-content: center;
+  /* border: 1px solid red; */
+  gap: 3rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.flex {
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: center; */
+  /* border: 1px solid green; */
+}
+
+.container {
+  width: 50%;
+  padding: 10px 6rem;
+}
+
+.full-width-input {
+  /* display: none; */
+  width: 100rem;
+  /* border: 1px solid red; */
+}
+
+.form-button {
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .parent-container {
+    width: 80%;
+    margin: auto;
+  }
+}

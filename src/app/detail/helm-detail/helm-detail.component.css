@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  width: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  max-height: 200px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}

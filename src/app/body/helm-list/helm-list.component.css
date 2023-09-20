@@ -1,0 +1,17 @@
+/* p {
+  box-sizing: border-box;
+  border: 1px solid red;
+  width: 20rem;
+  height: 5rem;
+} */
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 5rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem;
+}

@@ -1,0 +1,82 @@
+<div class="parent-container">
+  <mat-card class="container">
+    <mat-card-content>
+      <mat-form-field class="flex">
+        <mat-label>Your Helm Url</mat-label>
+        <input matInput [(ngModel)]="url" name="url" id="url" type="text" />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Nama Helm</mat-label>
+        <input
+          matInput
+          [(ngModel)]="helmName"
+          name="helmName"
+          id="helmName"
+          type="text"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Color</mat-label>
+        <input
+          matInput
+          [(ngModel)]="helmColor"
+          name="helmColor"
+          id="helmColor"
+          type="text"
+          class="full-width-input"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Size</mat-label>
+        <mat-select [(ngModel)]="helmSize" name="helmSize" id="helmSize">
+          <mat-option value="S">S</mat-option>
+          <mat-option value="M">M</mat-option>
+          <mat-option value="L">L</mat-option>
+          <mat-option value="XL">XL</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Year</mat-label>
+        <input
+          matInput
+          [(ngModel)]="helmYear"
+          name="helmYear"
+          id="helmYear"
+          type="text"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Model</mat-label>
+        <mat-select [(ngModel)]="helmModel" name="helmModel" id="helmModel">
+          <mat-option value="full Face">Full Face</mat-option>
+          <mat-option value="General">General</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="flex">
+        <mat-label>Weight</mat-label>
+        <input
+          matInput
+          [(ngModel)]="helmWeight"
+          name="helmWeight"
+          id="helmWeight"
+          type="text"
+        />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="addData()"
+        class="form-button"
+      >
+        Add Data
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>

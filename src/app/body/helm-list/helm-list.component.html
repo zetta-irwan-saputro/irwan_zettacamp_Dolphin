@@ -1,0 +1,8 @@
+<div class="container">
+  <app-helm-card
+    (onDeleteClick)="deleteHelm(helm)"
+    [helm]="helm"
+    *ngFor="let helm of helmList; let i = index"
+    (seeDetail)="seeDetail(i)"
+  ></app-helm-card>
+</div>

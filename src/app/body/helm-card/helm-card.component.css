@@ -1,0 +1,45 @@
+.card {
+  width: 200px; /* Sesuaikan lebar card dengan preferensi Anda */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  width: 100px; /* Menyesuaikan ukuran gambar dengan preferensi Anda */
+  height: 100px; /* Menyesuaikan ukuran gambar dengan preferensi Anda */
+  object-fit: cover; /* Untuk menjaga aspek gambar ketika mengubah ukuran */
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.button button {
+  background-color: #f13d3d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button button:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+button.two {
+  background-color: rgb(12, 211, 12) !important;
+}

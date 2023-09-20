@@ -1,0 +1,9 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+}
